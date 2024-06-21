@@ -1,0 +1,12 @@
+[submodule "repos/toll-payments"]
+	path = repos/toll-payments
+	url = https://github.com/vitor-melo-nunes/toll-payments.git
+[submodule "repos/toll-customers"]
+	path = repos/toll-customers
+	url = https://github.com/vitor-melo-nunes/toll-customers.git
+[submodule "repos/toll-records"]
+	path = repos/toll-records
+	url = https://github.com/vitor-melo-nunes/toll-records.git
+[submodule "repos/toll-notifications"]
+	path = repos/toll-notifications
+	url = https://github.com/vitor-melo-nunes/toll-notifications.git
