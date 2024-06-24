@@ -1,3 +1,9 @@
+# Free Flow Projet
+
+![](free-flow.jpg)
+
+## Configuration
+
 Add Submodules command 
 
 ```
@@ -15,3 +21,4 @@ Update Submodule
 ```
 git submodule update
 ```
+
