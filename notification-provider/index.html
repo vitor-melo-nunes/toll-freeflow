@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedágio - Notificações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="notification-container">
+        <div id="notifications-list"></div>
+    </div>
+
+    <script>
+        function fetchNotifications() {
+            fetch('http://localhost:3000/notifications') 
+                .then(response => response.json())
+                .then(data => {
+                    const notificationsList = document.getElementById('notifications-list');
+                    notificationsList.innerHTML = '';
+
+                    const notificationsByPhone = {};
+
+                    data.forEach(notification => {
+                        if (!notificationsByPhone[notification.phone]) {
+                            notificationsByPhone[notification.phone] = document.createElement('div');
+                            notificationsByPhone[notification.phone].classList.add('phone-section');
+                            notificationsList.appendChild(notificationsByPhone[notification.phone]);
+                        }
+
+                        const notificationElement = document.createElement('div');
+                        notificationElement.classList.add('notification');
+                        notificationElement.innerHTML = `
+                            <div class="notification-icon">
+                                &#x1F514; <!-- Ícone ASCII para sino de notificação -->
+                            </div>
+                            <div class="notification-content">
+                                <h3>Notificação de Pedágio</h3>
+                                <p>Olá <span class="notification-name">${notification.name}</span>,</p>
+                                <p>${notification.message}</p>
+                            </div>
+                        `;
+
+                        notificationsByPhone[notification.phone].appendChild(notificationElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar registros:', error);
+                });
+        }
+
+        setInterval(fetchNotifications, 5000);
+
+        fetchNotifications();
+    </script>
+</body>
+</html>
