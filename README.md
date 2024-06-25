@@ -17,10 +17,10 @@ This repository serves two main purposes:
 - **toll-records:** Manages toll event records.
 
 ## Repository Structure
-- **toll-notifications:** [Link to repository](submodules/toll-notifications)
-- **toll-customers:** [Link to repository](submodules/toll-customers)
-- **toll-payments:** [Link to repository](submodules/toll-payments)
-- **toll-records:** [Link to repository](submodules/toll-records)
+- **toll-notifications:** [Link to repository](https://github.com/vitor-melo-nunes/toll-notifications)
+- **toll-customers:** [Link to repository](https://github.com/vitor-melo-nunes/toll-customers)
+- **toll-payments:** [Link to repository](https://github.com/vitor-melo-nunes/toll-payments)
+- **toll-records:** [Link to repository](https://github.com/vitor-melo-nunes/toll-records)
 
 ## Getting Started
 ### Prerequisites
