@@ -1,8 +1,10 @@
 # Free Flow Projet
 
-![](free-flow.jpg)
-
 The Toll Freeflow System is designed to manage toll notifications, customer data, toll payments, and toll records using a microservices architecture. This project is built with Java Spring Boot and Spring Cloud, leveraging AWS Cloud resources including DynamoDB, SQS, ECS Fargate, and RDS with MySQL. 
+
+![](freeflow.gif)
+![](solution-architecture.jpg)
+
 
 This repository serves two main purposes:
 1. To provide a comprehensive overview of the project.
