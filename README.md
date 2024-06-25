@@ -18,9 +18,9 @@ This repository serves two main purposes:
 
 ## Repository Structure
 - **toll-notifications:** [Link to repository](https://github.com/vitor-melo-nunes/toll-notifications)
-- **toll-customers:** [Link to repository](https://github.com/vitor-melo-nunes/toll-customers)
-- **toll-payments:** [Link to repository](https://github.com/vitor-melo-nunes/toll-payments)
 - **toll-records:** [Link to repository](https://github.com/vitor-melo-nunes/toll-records)
+- **toll-customers:** [Link to repository](https://github.com/vitor-melo-nunes/toll-customers)
+- **toll-payments:** [Link to repository]()
 
 ## Getting Started
 ### Prerequisites
